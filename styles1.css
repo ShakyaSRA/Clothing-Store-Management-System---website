@@ -1,3 +1,52 @@
+/************HOME PAGE*************/
+@media (max-width: 1024px) {
+    .branding {
+        margin-left: 2rem;
+        gap: 0.5rem;
+    }
+
+    .header {
+        height: 8rem;
+        padding: 0.4rem;
+    }
+
+    .header .logo img {
+        height: 6rem;
+    }
+
+    .header .name {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 767px) {
+    .branding {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-left: 1rem;
+        gap: 0.3rem;
+    }
+
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+        height: auto;
+        padding: 0.8rem 1rem;
+    }
+
+    .header .logo img {
+        height: 5rem;
+    }
+
+    .header .name {
+        font-size: 1.8rem;
+        text-align: left;
+    }
+
+    .btn:hover {
+        letter-spacing: 0.1rem;
+    }
+}
 
 /******ABOUT US********/
 
@@ -25,9 +74,80 @@
     }
 }
 
+
+/***************PRODUCTS**************/
+
+@media (max-width: 1024px) {
+    .products .box-container {
+        gap: 1rem;
+    }
+
+    .products .box-container .box {
+        flex: 1 1 45%;
+        margin: 2rem;
+    }
+
+    .products .box-container .box .image img {
+        height: 20rem;
+    }
+
+    .products .box-container .box .content h3,
+    .products .box-container .box .content .price {
+        font-size: 2rem;
+    }
+
+    .products .box-container .box .content .price span {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 767px) {
+    .products .box-container {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .products .box-container .box {
+        flex: 1 1 100%;
+        margin: 1rem 0;
+    }
+
+    .products .box-container .box .image img {
+        height: 18rem;
+    }
+
+    .products .box-container .box .content h3 {
+        font-size: 1.8rem;
+    }
+
+    .products .box-container .box .content .price {
+        font-size: 2rem;
+    }
+
+    .products .box-container .box .content .price span {
+        font-size: 1.6rem;
+    }
+
+    .products .box-container .box .image .icons a {
+        height: 4rem;
+        line-height: 4rem;
+        font-size: 1.6rem;
+    }
+
+    .products .box-container .box .discount {
+        font-size: 1.5rem;
+        padding: 0.5rem 0.8rem;
+    }
+
+    .products .box-container .box .image .icons a::after {
+        font-size: 7px;
+        padding-inline: 0.5rem;
+        line-height: 2;
+    }
+}
+
 /******CONTACT US********/
 
-/* ---------- TABLETS ---------- */
 @media (max-width: 991px) {
   .contact-text h1 {
     font-size: 6rem;
@@ -57,7 +177,6 @@
   }
 }
 
-/* ---------- PHONES ---------- */
 @media (max-width: 600px) {
   .contact {
     margin-top: 5rem;
@@ -108,7 +227,6 @@
 
 /**************HEADER SECTION*******************/
 
-/* ========== TABLETS (max-width: 991px) ========== */
 @media (max-width: 991px) {
   .heading {
     font-size: 4rem;
@@ -159,8 +277,6 @@
   }
 }
 
-
-/* ========== PHONES (max-width: 600px) ========== */
 @media (max-width: 600px) {
   .heading {
     font-size: 2.5rem;
@@ -234,7 +350,7 @@
 
 
 /**************CHECKOUT AND ACCOUNTS*******************/
-/* ========== TABLETS (max-width: 991px) ========== */
+
 @media (max-width: 991px) {
   .checkout {
     margin: 8rem 4rem;
@@ -275,8 +391,6 @@
   }
 }
 
-
-/* ========== PHONES (max-width: 600px) ========== */
 @media (max-width: 600px) {
   .checkout {
     margin: 5rem 1rem;
@@ -337,7 +451,6 @@
 }
 /***************CART****************/
 
-/* ========== TABLETS (max-width: 991px) ========== */
 @media (max-width: 991px) {
   .table_container {
     margin: 8rem 4rem;
@@ -382,7 +495,6 @@
   }
 }
 
-/* ========== MOBILE DEVICES (max-width: 600px) ========== */
 @media (max-width: 600px) {
   .table_container {
     margin: 6rem 1rem;
@@ -466,7 +578,7 @@
 
 
 /*******************REVIEW SECTION*************************/
-/* Tablets (up to 991px) */
+
 @media (max-width: 991px) {
   .review .box-container {
     gap: 2rem;
@@ -500,7 +612,6 @@
   }
 }
 
-/* Phones (up to 600px) */
 @media (max-width: 600px) {
   .review .box-container .box {
     padding: 2rem;
@@ -546,7 +657,7 @@
 
 
 /******************ABOUT SECTIONS********************/
-/* Tablets (up to 991px) */
+
 @media (max-width: 991px) {
   .about .row,
   .about_other .row {
@@ -576,7 +687,6 @@
   }
 }
 
-/* Phones (up to 600px) */
 @media (max-width: 600px) {
   .about .row .content h3,
   .about_other .row .content h3 {

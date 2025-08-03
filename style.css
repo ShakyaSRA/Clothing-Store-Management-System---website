@@ -60,6 +60,7 @@ section {
 
 }
 
+
 .header {
     font-family: PoppinsB;
 
@@ -151,7 +152,7 @@ section {
 }
 
 .header .icons .icon,
-.filter-toggle i  {
+.filter-toggle i {
     position: relative;
     color: rgb(184, 132, 137);
     cursor: pointer;
@@ -163,7 +164,7 @@ section {
 .header .icons .icon:hover,
 .header .icons .icon:hover a,
 .header .icons .icon:hover i,
-.filter-toggle i  {
+.filter-toggle i {
     color: var(--main-color);
 }
 
@@ -180,46 +181,50 @@ section {
 
 .header .icons .icon i,
 .header .icons .login a,
-.filter-toggle i  {
+.filter-toggle i {
     color: rgb(184, 132, 137);
 }
 
 .header .fa-bars {
-    
+
     display: none;
     font-size: 3rem;
     color: rgb(184, 132, 137);
     cursor: pointer;
 }
 
+
+/************FILTER OPTION*************/
 .filter-toggle {
-  position: relative;
-  display: flex;
-  align-items: center;
+    position: relative;
+    display: flex;
+    align-items: center;
 
 }
 
 .filter-toggle select {
-    width:15rem;
-  margin-left: 10px;
-  padding: 5px 10px;
-  border-radius: 4px;
-  display: none;
-  position: absolute;
-  top: 60px; 
-  left: -100px;
-  background-color: white;
-  border: 1px solid #ccc;
-  z-index: 1000;
+    width: 15rem;
+    margin-left: 10px;
+    padding: 5px 10px;
+    border-radius: 4px;
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: -100px;
+    background-color: white;
+    border: 1px solid #ccc;
+    z-index: 1000;
 }
 
 .filter-toggle select.show {
-  display: block;
+    display: block;
 }
 
-#filteredProductsSection{
+#filteredProductsSection {
     margin-top: 10rem;
 }
+
+/********HOME PAGE***********/
 
 .home {
     min-height: 120vh;
@@ -230,7 +235,6 @@ section {
     background-position: center top;
 
 }
-
 
 .home .content {
     max-width: 60rem;
@@ -254,6 +258,7 @@ section {
     color: rgb(255, 249, 230);
 }
 
+/*********ABOUT SECTION IN HOME PAGE****************/
 .about .row {
     display: flex;
     align-items: center;
@@ -285,6 +290,8 @@ section {
     padding: 1rem;
     line-height: 1.8rem;
 }
+
+/**********ABOUT SECTION IN OTHER PAGES*************/
 
 .about_other {
     margin-top: 10rem;
@@ -326,7 +333,9 @@ section {
     line-height: 1.8rem;
 }
 
-#about_page{
+
+/********ABOUT PAGE**********/
+#about_page {
     margin-top: 10rem;
 }
 
@@ -340,7 +349,7 @@ section {
     padding: 1.5rem;
     margin-bottom: 1.5rem;
     border-left: 5px solid var(--pink);
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     cursor: pointer;
     transition: all 0.3s ease;
@@ -366,7 +375,7 @@ section {
     display: none;
 }
 
-/* Timeline Section */
+/************* Timeline Section in about us pg ****************/
 .timeline-section {
     padding: 4rem 2rem;
     background-color: #fafafa;
@@ -416,8 +425,8 @@ section {
     left: 50%;
 }
 
-.timeline-content p{
-   font-size: 1.25rem;
+.timeline-content p {
+    font-size: 1.25rem;
 }
 
 .timeline-content {
@@ -425,7 +434,7 @@ section {
     padding: 1rem 1.5rem;
     border-radius: 8px;
     position: relative;
-    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
 }
 
@@ -444,166 +453,205 @@ section {
     color: #333;
 }
 
-
+/**************CONTACT US PAGE***************/
 .contact {
-  margin-top: 10rem;
-  background: url('pics/contact.avif') no-repeat center center/cover;
-  height: 30rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  text-align: center;
+    margin-top: 10rem;
+    background: url('pics/contact.avif') no-repeat center center/cover;
+    height: 30rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
 }
 
 .contact-text h1 {
-  font-size: 10rem;
-  margin: 0;
+    font-size: 10rem;
+    margin: 0;
 }
 
 .contact-section {
-    margin: auto 10rem;
-  display: flex;
-  justify-content: space-between;
-  padding: 40px;
-  background-color: #fff;
+    margin: auto 15rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    background-color: #fff;
 }
 
-.contact-left, .contact-right {
-  flex: 1;
-  margin: 0 20px;
+.contact-left,
+.contact-right {
+    flex: 1;
+    margin: 0 20px;
 }
 
-.contact-left h2, .contact-right h2 {
-  font-size: 3rem;
-  margin-bottom: 10px;
+.contact-left h2,
+.contact-right h2 {
+    font-size: 3rem;
+    margin-bottom: 10px;
 }
 
+.contact-left h2{
+  text-align: center;
+}
 .contact-left p {
-  font-size: 1.5rem;
-  color: #555;
+    line-height: 4rem;
+    text-align: center;
+    font-size: 1.5rem;
+    color: #555;
 }
 
 .contact-info p {
-  margin: 10px 0;
+    margin: 10px 0;
+}
+
+.contact-section .social-icons{
+    margin-left: 25rem;
 }
 
 .contact-info i,
-.social-icons i {
-  color: #333;
-  margin-right: 10px;
+.contact-section .social-icons i {
+    color: #333;
+    margin-right: 10px;
 }
 
-.social-icons a {
-  margin: 3rem 8px;
-  text-decoration: none;
-  font-size: 2.5rem;
-  color: #555;
-  transition: color 0.3s;
+.contact-section .social-icons a {
+    margin: 3rem 8px;
+    text-decoration: none;
+    font-size: 2.5rem;
+    color: #555;
+    transition: color 0.3s;
 }
 
-.social-icons a:hover {
-  color: #000;
+.contact-section .social-icons a:hover {
+    color: #000;
 }
 
 .contact-right form {
-  display: flex;
-  flex-direction: column;
+    display: flex;
+    flex-direction: column;
 }
 
 .contact-right .row {
-  display: flex;
-  gap: 10px;
+    display: flex;
+    gap: 10px;
 }
 
-.contact-right input, .contact-right textarea {
-  margin: 10px 0;
-  padding: 10px;
-  font-size: 1.5rem;
-  width: 100%;
-  border: 1px solid #ccc;
-  border-radius: 4px;
+.contact-right input,
+.contact-right textarea {
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 1.5rem;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
 }
-.contact-right p{
+
+.contact-right p {
     font-size: 1.25rem;
 }
 
 .contact-right textarea {
-  min-height: 100px;
-  resize: vertical;
+    min-height: 100px;
+    resize: vertical;
 }
 
 .contact-right button {
-  padding: 12px;
-  background-color: var(--pink);
-  color: white;
-  border: none;
-  cursor: pointer;
-  border-radius: 4px;
+    padding: 12px;
+    background-color: var(--pink);
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
 }
 
 .contact-right button:hover {
-  background-color: #555;
+    background-color: #555;
 }
 
+/*************location section in contact page***********/
+.location{
+    margin: 7rem 10rem 7rem 10rem;
+    border: 0.1rem solid #fff;
+    box-shadow: 0 .5rem 1.5rem #aaa;
+}
+.location .img {
+    overflow: hidden;
+    height: 60rem;
+    width: 100%;
+}
+
+.location .img img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.location .img:hover img {
+    transform: scale(1.2); /* Zooms on hover */
+}
+
+
+/*******SALES***********/
+
 .sale-section {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 40px;
-  background-color: #f3e9e1;
-  border-radius: 10px;
-  max-width: 1000px;
-  margin: 10rem auto 5rem auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    background-color: #f3e9e1;
+    border-radius: 10px;
+    max-width: 1000px;
+    margin: 10rem auto 5rem auto;
 }
 
 .sale-content {
-  max-width: 100%;
+    max-width: 100%;
 }
 
 .sale-content h2 {
-  font-size: 3rem;
-  margin-bottom: 1rem;
+    font-size: 3rem;
+    margin-bottom: 1rem;
 }
 
 .sale-content p {
     font-size: 1.5rem;
-  color: #555;
-  margin-bottom: 20px;
+    color: #555;
+    margin-bottom: 20px;
 }
 
 .countdown {
     margin-top: 4rem;
-  display: flex;
-  gap: 15px;
+    display: flex;
+    gap: 15px;
 }
 
 .time-box {
-  background: white;
-  padding: 10px 15px;
-  border-radius: 5px;
-  text-align: center;
-  min-width: 7rem;
+    background: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-align: center;
+    min-width: 7rem;
 }
 
 .time-box span {
-  font-size: 3rem;
-  font-weight: bold;
-  display: block;
+    font-size: 3rem;
+    font-weight: bold;
+    display: block;
 }
 
 .time-box small {
     font-size: 1.25rem;
-  color: #888;
+    color: #888;
 }
 
 .sale-image img {
-  height: 40rem;
-  width: auto;
-  border-radius: 10px;
+    height: 40rem;
+    width: auto;
+    border-radius: 10px;
 }
 
 
+/************PRODUCTS*******************/
 .products {
     width: 100%;
 
@@ -740,7 +788,7 @@ section {
 }
 
 
-
+/*************REVIEWS SECTION*****************/
 .review .box-container {
     display: flex;
     flex-wrap: wrap;
@@ -763,7 +811,6 @@ section {
     right: 3rem;
     font-size: 6rem;
     color: rgb(177, 171, 171);
-    ;
 }
 
 .review .box-container .box .stars i {
@@ -802,6 +849,8 @@ section {
     color: #333;
 }
 
+
+/******NESLETTER SECTION*****************/
 .newsletter {
     display: flex;
     justify-content: space-between;
@@ -864,106 +913,109 @@ section {
     letter-spacing: .2rem;
 }
 
+
+/**************FOOTER SECTION**********************/
 .footer-container {
-  background-color: rgb(139, 91, 100);
-  padding: 4rem 2rem;
+    background-color: rgb(139, 91, 100);
+    padding: 4rem 2rem;
 }
 
 .footer-links {
-  max-width: 1100px;
-  margin: auto;
-  width: 100%;
+    max-width: 1100px;
+    margin: auto;
+    width: 100%;
 }
 
 .footer-link-wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin-bottom: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 3rem;
 }
 
 
 .footer-link-items {
-  display: flex;
-  flex-direction: column;
-  margin: 1rem;
-  min-width: 150px;
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    min-width: 150px;
 }
 
 .footer-link-items h3 {
-  font-size: 1.8rem;
-  margin-bottom: 1rem;
-  color: #fff;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: #fff;
 }
 
 .footer-link-items a {
-  font-size: 1.5rem;
-  color: var(--bg);
-  text-decoration: none;
-  margin: 0.4rem 0;
+    font-size: 1.5rem;
+    color: var(--bg);
+    text-decoration: none;
+    margin: 0.4rem 0;
 }
 
 .footer-link-items a:hover {
-  color: #fff;
-  transition: 0.3s ease;
+    color: #fff;
+    transition: 0.3s ease;
 }
 
-/* Branding and Social Icons */
+/*************** Branding and Social Icons ****************/
 .social-media {
-  border-top: 1px solid rgba(255, 255, 255, 0.2);
-  padding-top: 2rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    padding-top: 2rem;
 }
 
 .social-media-wrap {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
 }
 
 .footer-branding {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
 }
 
 .footer-branding img {
-  height: 6rem;
-  border-radius: 30%;
+    height: 6rem;
+    border-radius: 30%;
 }
 
 .brand-name {
-  font-family: 'Great Vibes', cursive;
-  font-size: 2.8rem;
-  color: rgb(255, 199, 207);
+    font-family: 'Great Vibes', cursive;
+    font-size: 2.8rem;
+    color: rgb(255, 199, 207);
 }
 
 .website-rights {
-  font-size: 1.2rem;
-  color: #e0e0e0;
+    font-size: 1.2rem;
+    color: #e0e0e0;
 }
 
-.brand-name{
+.brand-name {
     font-family: greatvibes;
     font-weight: lighter;
 }
+
 .social-icons {
-  display: flex;
-  gap: 1.5rem;
-  font-size: 2.4rem;
+    display: flex;
+    gap: 1.5rem;
+    font-size: 2.4rem;
 }
 
 .social-icon-link {
-  color: rgb(254, 119, 153);
-  transition: color 0.3s;
+    color: rgb(254, 119, 153);
+    transition: color 0.3s;
 }
 
 .social-icon-link:hover {
-  color: white;
+    color: white;
 }
 
 
-/* new arrivals */
+/************** new arrivals **************/
 
 .new {
     height: 20rem;
@@ -977,7 +1029,6 @@ section {
     display: flex;
     align-items: center;
     gap: 40rem;
-    /* spacing between image and heading */
 }
 
 .n_content img {
@@ -995,7 +1046,7 @@ section {
     font-style: italic;
 }
 
-/* collections */
+/************* collections ********************/
 
 .collections {
     height: 20rem;
@@ -1009,7 +1060,6 @@ section {
     display: flex;
     align-items: center;
     gap: 40rem;
-    /* spacing between image and heading */
 }
 
 .c_content img {
@@ -1100,7 +1150,7 @@ section {
 }
 
 
-/**************PRODUCT DETAILS************************/
+/**************PRODUCT_DETAILS page************************/
 .details_container {
     margin: 10rem 15rem auto 15rem;
     display: flex;
@@ -1352,7 +1402,7 @@ textarea {
 }
 
 
-/**************CART*********************/
+/**************CART page*********************/
 
 .table_container {
     overflow-x: auto;
@@ -1430,14 +1480,18 @@ textarea {
 }
 
 .fa-trash-alt {
+    cursor: pointer;
     color: var(--pink);
 }
 
 .cart_action {
+    display: flex;
     justify-content: flex-end;
     gap: 0.75rem;
     margin-top: 1.5rem;
+    width: 100%;
 }
+
 
 .divider {
     position: relative;
@@ -1496,7 +1550,7 @@ textarea {
 
 }
 
-.cart_inputs{
+.cart_inputs {
     width: 70rem;
     display: flex;
     flex-direction: column;
@@ -1513,9 +1567,9 @@ textarea {
     flex-direction: row;
 }
 
-.coupon_form .form_grp .btn{
+.coupon_form .form_grp .btn {
     height: 4rem;
-   margin-top: 0;
+    margin-top: 0;
     width: 14rem;
 }
 
@@ -1552,6 +1606,27 @@ textarea {
 
 .cart_total_btn {
     display: inline-flex;
+}
+
+/***********PAGINATION***********/
+
+.pagination {
+    text-align: center;
+    padding-bottom: 3rem;
+}
+
+.pagination a {
+    text-decoration: none;
+    background-color: var(--pink);
+    padding: 15px 20px;
+    border-radius: 4px;
+    color: #fff;
+    font-weight: 600;
+}
+
+.pagination a i {
+    font-size: 16px;
+    font-weight: 600;
 }
 
 
@@ -1624,7 +1699,6 @@ textarea {
     transition: transform .18s ease;
     transform: translateX(0);
 }
-
 
 .login_form .wrapper .form_box h2 {
     font-size: 3rem;
@@ -1717,17 +1791,19 @@ textarea {
     margin: 25px 0 10px;
 }
 
-.login_reg_link p{
+.login_reg_link p {
     font-size: 1.25rem;
 }
 
-.register_link, .login_link {
+.register_link,
+.login_link {
     color: var(--pink);
     text-decoration: none;
     font-weight: 600;
 }
 
-.register_link:hover , .login_link:hover {
+.register_link:hover,
+.login_link:hover {
     text-decoration: underline;
 }
 
@@ -1757,18 +1833,20 @@ textarea {
     font-size: 1rem;
 }
 
-.checkout_grp{
+.checkout_grp {
     width: 80rem;
 }
-.checkout_grp .form{
-  display: flex;
-  flex-direction: column;
+
+.checkout_grp .form {
+    display: flex;
+    flex-direction: column;
 }
 
-.checkout_grp .form textarea{
+.checkout_grp .form textarea {
     height: 15rem;
     width: 68rem;
 }
+
 .checkout_grp .form input {
     padding: 1rem;
     width: 68rem;
@@ -1802,14 +1880,14 @@ textarea {
     color: var(--main-color);
     font-size: 1.5rem;
     font-weight: 20%;
-
 }
 
-.checkout_title{
+.checkout_title {
     padding: 1rem;
     font-size: 2rem;
 
 }
+
 .payment_method {
     margin-block: 2rem 2.5rem;
 }
@@ -1832,7 +1910,7 @@ textarea {
     font-size: 1.25rem;
 }
 
-.btn.cart a{
+.btn.cart a {
     color: #fff;
 }
 
@@ -1850,7 +1928,7 @@ textarea {
 }
 
 .accounts_tabs {
-    
+
     border: 1px solid var(--pink);
     border-radius: 0.25rem;
 }
@@ -1892,16 +1970,17 @@ textarea {
     font-size: 2rem;
 }
 
-.tab_desccription{
+.tab_desccription {
     font-size: 1.5rem;
 }
 
 .tab_body {
     padding: 1rem;
 }
+
 .placed_order_table {
     width: 100rem;
-    border-collapse: collapse; 
+    border-collapse: collapse;
     margin-top: 1rem;
 }
 
@@ -1934,11 +2013,11 @@ textarea {
     font-size: 1.5rem;
 }
 
-.form-grid{
+.form-grid {
     width: 100rem;
 }
 
-.form-grid input{
+.form-grid input {
     font-size: 1.5rem;
     border: 1px solid var(--pink);
     padding: .5rem;
@@ -1947,105 +2026,106 @@ textarea {
 
 /****************PAYMENT****************/
 .payment_form {
-  background-color: var(--bg, #f3f6f9);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  margin: 0;
-  padding: 0;
+    background-color: var(--bg, #f3f6f9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
 }
 
 .payment-container {
-  background: white;
-  border-radius: 10px;
-  padding: 30px;
-  width: 100%;
-  max-width: 450px;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-  box-sizing: border-box;
+    background: white;
+    border-radius: 10px;
+    padding: 30px;
+    width: 100%;
+    max-width: 450px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
 }
 
 .payment-tabs {
-  display: flex;
-  justify-content: space-between;
-  gap: 1rem;
-  margin-bottom: 20px;
-  flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
 }
 
 .payment-tabs .tab {
-  flex: 1;
-  text-align: center;
-  padding: 10px;
-  background: #f0f0f0;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
-  font-weight: 500;
+    flex: 1;
+    text-align: center;
+    padding: 10px;
+    background: #f0f0f0;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 500;
 
 }
 
-.payment-tabs .tab button{
+.payment-tabs .tab button {
     width: 5rem;
 }
 
 .payment-tabs .tab.active_tab {
-  background: var(--bg);
-  color: var(--pink);
+    background: var(--bg);
+    color: var(--pink);
 }
 
 
-#payment-form label{
-  font-weight: 600;
-  display: block;
-  margin: 10px 0 5px;
+#payment-form label {
+    font-weight: 600;
+    display: block;
+    margin: 10px 0 5px;
 }
 
-.input_group input, select,
+.input_group input,
+select,
 .input-row input {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #ccd1d9;
-  border-radius: 6px;
-  margin-bottom: 10px;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccd1d9;
+    border-radius: 6px;
+    margin-bottom: 10px;
 }
 
 .input-row {
-  display: flex;
-  align-items: center;
-  gap: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
 .card-icons {
-  height: 50px;
+    height: 50px;
 }
 
 .input-group {
-  display: flex;
-  gap: 10px;
+    display: flex;
+    gap: 10px;
 }
 
 .terms {
-  font-size: 12px;
-  color: #666;
-  margin: 15px 0;
+    font-size: 12px;
+    color: #666;
+    margin: 15px 0;
 }
 
 .pay-button {
-  width: 100%;
-  padding: 12px;
-  background-color: var(--pink);
-  color: white;
-  border: none;
-  border-radius: 6px;
-  font-size: 16px;
-  cursor: pointer;
-  transition: background 0.3s ease;
+    width: 100%;
+    padding: 12px;
+    background-color: var(--pink);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
 }
 
 .pay-button:hover {
-  background-color: var(--main-color);
+    background-color: var(--main-color);
 }
 
 .error {
@@ -2053,8 +2133,4 @@ textarea {
     font-size: 1rem;
     margin-top: 2px;
     display: block;
-  }
-
-  .newsletter .error{
-
-  }
+}

@@ -14,24 +14,22 @@
 
 <body>
 
+  <!-- Heading section starts -->
+
   <div class="header">
     <div class="branding">
       <a href="#" class="logo"><img src="pics/logo.png"></a>
       <h3 class="name">La Belle Fille</h3>
-
-
     </div>
 
     <div class="navbar">
       <a href="index.html">Home</a>
-      <a href="newArivals.html">New Arivals</a>
+      <a href="newArivals.html">New Arrivals</a>
       <a href="collections.html">Collections</a>
       <a href="sale.html">Flash Sale</a>
       <a href="about.html">About</a>
       <a href="contactUs.html">Contact Us</a>
-
     </div>
-
 
     <div class="icons">
       <div class="icon login" id="login">
@@ -39,14 +37,14 @@
       </div>
 
       <div class="filter-toggle">
-                <i class="fas fa-filter" id="filterIcon" title="Filter Products"></i>
-                <select id="typeFilter" class="hidden">
-                    <option value="all">All</option>
-                    <option value="dress">Dress</option>
-                    <option value="blouse">Blouses</option>
-                    <option value="activeWear">Active Wear</option>
-                </select>
-            </div>
+        <i class="fas fa-filter" id="filterIcon" title="Filter Products"></i>
+        <select id="typeFilter" class="hidden">
+          <option value="all">All</option>
+          <option value="dress">Dress</option>
+          <option value="blouse">Blouses</option>
+          <option value="activeWear">Active Wear</option>
+        </select>
+      </div>
 
       <div class="icon" id="cart-btn">
         <a href="cart.html">
@@ -64,12 +62,10 @@
       <div class="icon" id="menu-btn">
         <i class="fas fa-bars"></i>
       </div>
-
-      
     </div>
-
   </div>
 
+  <!-- Heading section ends -->
 
   <!-- payment section start-->
   <section class="payment_form">
@@ -83,40 +79,40 @@
 
       <form id="payment-form">
         <label>Card number</label>
-<div class="input-row">
-  <input type="text" placeholder="1234 1234 1234 1234" required maxlength="19">
-  <img class="card-icons" src="pics/visa.png" alt="Visa">
-</div>
-<span class="error" id="card-error"></span>
+        <div class="input-row">
+          <input type="text" placeholder="1234 1234 1234 1234" required maxlength="19">
+          <img class="card-icons" src="pics/visa.png" alt="Visa">
+        </div>
+        <span class="error" id="card-error"></span>
 
-<div class="input_group">
-  <div>
-    <label>Expiry</label>
-    <input type="text" placeholder="MM / YY" required maxlength="7">
-    <span class="error" id="expiry-error"></span>
-  </div>
-  <div>
-    <label>CVC</label>
-    <input type="text" placeholder="CVC" required maxlength="4">
-    <span class="error" id="cvc-error"></span>
-  </div>
-</div>
+        <div class="input_group">
+          <div>
+            <label>Expiry</label>
+            <input type="text" placeholder="MM / YY" required maxlength="7">
+            <span class="error" id="expiry-error"></span>
+          </div>
+          <div>
+            <label>CVC</label>
+            <input type="text" placeholder="CVC" required maxlength="4">
+            <span class="error" id="cvc-error"></span>
+          </div>
+        </div>
 
-<div class="input_group">
-  <div>
-    <label>Country</label>
-    <select required>
-      <option>Sri Lanka</option>
-      <option>India</option>
-      <option>China</option>
-    </select>
-  </div>
-  <div>
-    <label>ZIP</label>
-    <input type="text" placeholder="90210" required>
-    <span class="error" id="zip-error"></span>
-  </div>
-</div>
+        <div class="input_group">
+          <div>
+            <label>Country</label>
+            <select required>
+              <option>Sri Lanka</option>
+              <option>India</option>
+              <option>China</option>
+            </select>
+          </div>
+          <div>
+            <label>ZIP</label>
+            <input type="text" placeholder="90210" required>
+            <span class="error" id="zip-error"></span>
+          </div>
+        </div>
 
         <p class="terms">By providing your card information, you allow Techtolia to charge your card for future payments
           in accordance with their terms.</p>

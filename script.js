@@ -1,4 +1,4 @@
-
+//In product details the More info tabs
 document.addEventListener('DOMContentLoaded', function () {
   const tabs = document.querySelectorAll('.detail_tab');
   const contents = document.querySelectorAll('.details_tab_content');
@@ -17,34 +17,11 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 
-
-document.addEventListener('DOMContentLoaded', function () {
-  const tabs = document.querySelectorAll('.account_tab');
-  const contents = document.querySelectorAll('.tab_content');
-
-  tabs.forEach(tab => {
-    tab.addEventListener('click', () => {
-      // Remove 'active-tab' class from all
-      tabs.forEach(t => t.classList.remove('active-tab'));
-      contents.forEach(c => c.classList.remove('active-tab'));
-
-      // Add 'active-tab' to clicked tab and corresponding content
-      tab.classList.add('active-tab');
-      const targetSelector = tab.dataset.target;
-      const target = document.querySelector(targetSelector);
-      if (target) {
-        target.classList.add('active-tab');
-      }
-    });
-  });
-});
-
-
+//Login form and registration form switching
 document.addEventListener('DOMContentLoaded', () => {
   const wrapper = document.querySelector('.wrapper');
   const loginLink = document.querySelector('.login_link');
   const registerLink = document.querySelector('.register_link');
-  const iconClose = document.querySelector('.icon_close');
 
   if (registerLink) {
     registerLink.addEventListener('click', () => {
@@ -58,22 +35,17 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  if (iconClose) {
-    iconClose.addEventListener('click', () => {
-      wrapper.classList.remove('active-popup');
-    });
-  }
 });
 
-
+//login form and registration form regex validation
 document.addEventListener("DOMContentLoaded", () => {
   const registerForm = document.querySelector(".form_box.register form");
   const loginForm = document.querySelector(".form_box.login form");
 
   // REGEX patterns
-  const usernameRegex = /^[a-zA-Z0-9_]{3,16}$/;
-  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-  const passwordRegex = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{6,}$/;
+  const usernameRegex = /^[a-zA-Z0-9_]{3,16}$/; //from 3-16 characters
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; //like shakya@gmail.com
+  const passwordRegex = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{6,}$/; //at least 6 characters, includes both letters and numbers.
 
   if (registerForm) {
     registerForm.addEventListener("submit", (e) => {
@@ -127,7 +99,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 document.addEventListener("DOMContentLoaded", function () {
-   if (!window.location.pathname.includes("sale.html")) return;
+  if (!window.location.pathname.includes("sale.html")) return;
   // Target date - change this as needed
   const targetDate = new Date();
   targetDate.setDate(targetDate.getDate() + 8);
@@ -143,6 +115,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const now = new Date().getTime();
     const distance = targetDate - now;
 
+    //if the target date gets pased
     if (distance <= 0) {
       daysEl.textContent = "00";
       hoursEl.textContent = "00";
@@ -162,26 +135,25 @@ document.addEventListener("DOMContentLoaded", function () {
     secondsEl.textContent = seconds.toString().padStart(2, "0");
   }
 
-  updateCountdown(); // initial call
+  updateCountdown(); // run
   setInterval(updateCountdown, 1000); // update every second
 });
 
-//about us pg
 
+//about us pg
 function toggleContent(box) {
-    const p = box.querySelector("p");
-    p.classList.toggle("hidden");
+  const p = box.querySelector("p");
+  p.classList.toggle("hidden");
 }
 
 
-// Helper function to format prices
+//products boxes
+
+//  function to format prices
 function formatPrice(value) {
   return `Rs.${value.toFixed(2)}`;
 }
 
-
-
-// General rendering function
 function renderProducts(productList, containerId = "productContainer") {
   const container = document.getElementById(containerId);
   if (!container) return;
@@ -192,11 +164,11 @@ function renderProducts(productList, containerId = "productContainer") {
     const hasDiscount = product.discount && product.originalPrice;
 
     const imageHtml = product.link
-  ? `<a href="${product.link}"><img src="${product.image}" alt="${product.name}"></a>`
-  : `<img src="${product.image}" alt="${product.name}">`;
+      ? `<a href="${product.link}"><img src="${product.image}" alt="${product.name}"></a>`
+      : `<img src="${product.image}" alt="${product.name}">`;
 
 
-       container.innerHTML += `
+    container.innerHTML += `
     <div class="box">
         ${hasDiscount ? `<span class="discount">-${product.discount}%</span>` : ""}
         <div class="image">
@@ -216,7 +188,7 @@ function renderProducts(productList, containerId = "productContainer") {
         </div>
     </div>
   `;
-});
+  });
 }
 
 // INDEX PAGE
@@ -225,18 +197,9 @@ if (window.location.pathname.includes("index.html")) {
     const featured = window.products.slice(0, 12);
     renderProducts(featured);
 
-    const dropdown = document.getElementById("typeFilter");
-    if (dropdown) {
-      dropdown.addEventListener("change", () => {
-        const type = dropdown.value;
-        localStorage.setItem("selectedType", type);
-        window.location.href = "filtered.html";
-      });
-    }
+
   };
 }
-
-
 
 // NEW ARRIVALS PAGE
 if (window.location.pathname.includes("newArivals.html")) {
@@ -246,7 +209,7 @@ if (window.location.pathname.includes("newArivals.html")) {
   };
 }
 
-
+//FILTER FUNCTION
 document.addEventListener("DOMContentLoaded", function () {
   const filterIcon = document.getElementById("filterIcon");
   const dropdown = document.getElementById("typeFilter");
@@ -281,6 +244,8 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
+
+//Accounts page tabs
 document.addEventListener("DOMContentLoaded", () => {
   const tabsContainer = document.getElementById("accountTabs");
   const contentContainer = document.getElementById("tabsContent");
@@ -324,69 +289,70 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
-  document.getElementById("payment-form").addEventListener("submit", function (e) {
-    e.preventDefault();
 
-    // Get input elements
-    const cardNumberInput = document.querySelector("input[placeholder='1234 1234 1234 1234']");
-    const expiryInput = document.querySelector("input[placeholder='MM / YY']");
-    const cvcInput = document.querySelector("input[placeholder='CVC']");
-    const zipInput = document.querySelector("input[placeholder='90210']");
+//payment form validation
+document.getElementById("payment-form").addEventListener("submit", function (e) {
+  e.preventDefault();
 
-    // Get span elements for error messages
-    const cardError = document.getElementById("card-error");
-    const expiryError = document.getElementById("expiry-error");
-    const cvcError = document.getElementById("cvc-error");
-    const zipError = document.getElementById("zip-error");
+  // Get input elements
+  const cardNumberInput = document.querySelector("input[placeholder='1234 1234 1234 1234']");
+  const expiryInput = document.querySelector("input[placeholder='MM / YY']");
+  const cvcInput = document.querySelector("input[placeholder='CVC']");
+  const zipInput = document.querySelector("input[placeholder='90210']");
 
-    // Clear all previous errors
-    cardError.textContent = "";
-    expiryError.textContent = "";
-    cvcError.textContent = "";
-    zipError.textContent = "";
+  // Get span elements for error messages
+  const cardError = document.getElementById("card-error");
+  const expiryError = document.getElementById("expiry-error");
+  const cvcError = document.getElementById("cvc-error");
+  const zipError = document.getElementById("zip-error");
 
-    // Get values
-    const cardNumber = cardNumberInput.value.trim();
-    const expiry = expiryInput.value.trim();
-    const cvc = cvcInput.value.trim();
-    const zip = zipInput.value.trim();
+  // Clear all previous errors
+  cardError.textContent = "";
+  expiryError.textContent = "";
+  cvcError.textContent = "";
+  zipError.textContent = "";
 
-    // Regular Expressions
-    const cardRegex = /^(\d{4}[- ]?){3}\d{4}$/;
-    const expiryRegex = /^(0[1-9]|1[0-2])\s*\/\s*[0-9]{2}$/;
-    const cvcRegex = /^\d{3,4}$/;
-    const zipRegex = /^\d{4,6}$/;
+  // Get values
+  const cardNumber = cardNumberInput.value.trim();
+  const expiry = expiryInput.value.trim();
+  const cvc = cvcInput.value.trim();
+  const zip = zipInput.value.trim();
 
-    let valid = true;
+  // Regular Expressions
+  const cardRegex = /^(\d{4}[- ]?){3}\d{4}$/;
+  const expiryRegex = /^(0[1-9]|1[0-2])\s*\/\s*[0-9]{2}$/;
+  const cvcRegex = /^\d{3,4}$/;
+  const zipRegex = /^\d{4,6}$/;
 
-    if (!cardRegex.test(cardNumber)) {
-      cardError.textContent = "Invalid card number (e.g., 1234 5678 9012 3456)";
-      valid = false;
-    }
+  let valid = true;
 
-    if (!expiryRegex.test(expiry)) {
-      expiryError.textContent = "Invalid expiry (use MM / YY)";
-      valid = false;
-    }
+  if (!cardRegex.test(cardNumber)) {
+    cardError.textContent = "Invalid card number (e.g., 1234 5678 9012 3456)";
+    valid = false;
+  }
 
-    if (!cvcRegex.test(cvc)) {
-      cvcError.textContent = "CVC must be 3 or 4 digits";
-      valid = false;
-    }
+  if (!expiryRegex.test(expiry)) {
+    expiryError.textContent = "Invalid expiry (use MM / YY)";
+    valid = false;
+  }
 
-    if (!zipRegex.test(zip)) {
-      zipError.textContent = "ZIP code must be 4 to 6 digits";
-      valid = false;
-    }
+  if (!cvcRegex.test(cvc)) {
+    cvcError.textContent = "CVC must be 3 or 4 digits";
+    valid = false;
+  }
 
-    if (valid) {
-      // All fields valid, proceed
-      alert("Payment submitted successfully!");
-      // this.submit(); // Uncomment if using real form submission
-    }
-  });
+  if (!zipRegex.test(zip)) {
+    zipError.textContent = "ZIP code must be 4 to 6 digits";
+    valid = false;
+  }
 
- 
+  if (valid) {
+    alert("Payment submitted successfully!");
+  }
+});
+
+
+//checkoout validation
 document.getElementById("checkout_container").addEventListener("submit", function (e) {
   e.preventDefault();
 
@@ -462,27 +428,16 @@ document.getElementById("checkout_container").addEventListener("submit", functio
   }
 });
 
-document.getElementById('newsletter-submit').addEventListener('click', function() {
-  const emailInput = document.getElementById('newsletter-email');
-  const errorSpan = document.getElementById('error');
-  const email = emailInput.value.trim();
+//newsletter validation
+document.addEventListener('DOMContentLoaded', () => {
+  document.getElementById('newsletter_submit').addEventListener('click', function () {
+    const email = emailInput.value.trim();
 
-  // Simple email regex
-  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+if (!email || !email.includes("@") || !email.includes(".")) {
+  errorSpan.textContent = "Please enter a valid email address.";
+  emailInput.focus();
+  return;
+}
 
-  // Clear previous error
-  errorSpan.textContent = '';
-
-  if (!emailRegex.test(email)) {
-    errorSpan.textContent = "Please enter a valid email address.";
-    emailInput.focus();
-    return;
-  }
-
-  // If valid, you can submit form or do something else here
-  alert("Thank you for signing up!");
-
-  // Clear input
-  emailInput.value = '';
+  });
 });
-
