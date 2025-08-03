@@ -1,53 +1,3 @@
-/************HOME PAGE*************/
-@media (max-width: 1024px) {
-    .branding {
-        margin-left: 2rem;
-        gap: 0.5rem;
-    }
-
-    .header {
-        height: 8rem;
-        padding: 0.4rem;
-    }
-
-    .header .logo img {
-        height: 6rem;
-    }
-
-    .header .name {
-        font-size: 2rem;
-    }
-}
-
-@media (max-width: 767px) {
-    .branding {
-        flex-direction: column;
-        align-items: flex-start;
-        margin-left: 1rem;
-        gap: 0.3rem;
-    }
-
-    .header {
-        flex-direction: column;
-        align-items: flex-start;
-        height: auto;
-        padding: 0.8rem 1rem;
-    }
-
-    .header .logo img {
-        height: 5rem;
-    }
-
-    .header .name {
-        font-size: 1.8rem;
-        text-align: left;
-    }
-
-    .btn:hover {
-        letter-spacing: 0.1rem;
-    }
-}
-
 /******ABOUT US********/
 
 @media screen and (max-width: 768px) {
@@ -242,6 +192,7 @@
     flex-wrap: wrap;
     height: auto;
     padding: 1rem 2rem;
+    
   }
 
   .branding {
@@ -280,7 +231,6 @@
 @media (max-width: 600px) {
   .heading {
     font-size: 2.5rem;
-    padding-bottom: 2rem;
   }
 
   .btn {
@@ -289,65 +239,57 @@
   }
 
   .header {
+    max-height: 7rem;
     flex-direction: column;
-    height: auto;
     align-items: flex-start;
-    padding: 1rem;
+    overflow: auto;
   }
 
   .branding {
     margin-left: 0;
     flex-direction: column;
-    align-items: center;
     gap: 0.5rem;
   }
 
   .header .name {
-    font-size: 1.8rem;
+    font-size: 1.2rem;
     text-align: center;
   }
 
   .header .logo img {
-    height: 5rem;
+    height: 3rem;
   }
 
   .header .navbar {
-    width: 100%;
+    width: 95%;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
   }
 
   .header .navbar a {
-    padding: 0.5rem 0;
-    font-size: 1.4rem;
+    padding-right: 0.25rem ;
+    font-size: 1rem;
   }
 
   .header .icons {
-    justify-content: center;
-    width: 100%;
-    margin-top: 1rem;
+    width: 0%;
+    margin-left: -6rem;
+    margin-top: 0.4rem;
   }
 
-  .header .fa-bars {
-    display: block;
+  .icons #login, #filterIcon, #cart-btn, .icons .icon.user i{
+    font-size: 1rem;
+
   }
 
-  .header .search-form {
-    width: 95%;
-    right: 2.5%;
-    top: 110%;
+  .item-count {
+    top: -0.3rem;
+    right: -0.8rem;
+    padding: 0.15rem 0.4rem;
+    font-size: 0.8rem;
   }
 
-  .header .search-form input {
-    font-size: 1.4rem;
-  }
-
-  .header .search-form label {
-    font-size: 2rem;
-  }
 }
-
 
 /**************CHECKOUT AND ACCOUNTS*******************/
 
