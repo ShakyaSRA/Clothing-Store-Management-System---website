@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="Viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web page</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="styles1.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+
+</head>
+
+<body>
+
+  <div class="header">
+    <div class="branding">
+      <a href="#" class="logo"><img src="pics/logo.png"></a>
+      <h3 class="name">La Belle Fille</h3>
+
+
+    </div>
+
+    <div class="navbar">
+      <a href="index.html">Home</a>
+      <a href="newArivals.html">New Arivals</a>
+      <a href="collections.html">Collections</a>
+      <a href="sale.html">Flash Sale</a>
+      <a href="about.html">About</a>
+      <a href="contactUs.html">Contact Us</a>
+
+    </div>
+
+
+    <div class="icons">
+      <div class="icon login" id="login">
+        <a href="login_register.html">Login</a>
+      </div>
+
+      <div class="filter-toggle">
+                <i class="fas fa-filter" id="filterIcon" title="Filter Products"></i>
+                <select id="typeFilter" class="hidden">
+                    <option value="all">All</option>
+                    <option value="dress">Dress</option>
+                    <option value="blouse">Blouses</option>
+                    <option value="activeWear">Active Wear</option>
+                </select>
+            </div>
+
+      <div class="icon" id="cart-btn">
+        <a href="cart.html">
+          <i class="fas fa-shopping-cart"></i>
+        </a>
+        <span class="item-count">5</span>
+      </div>
+
+      <div class="icon user">
+        <a href="account.html">
+          <i class="fa-solid fa-user"></i>
+        </a>
+      </div>
+
+      <div class="icon" id="menu-btn">
+        <i class="fas fa-bars"></i>
+      </div>
+
+      
+    </div>
+
+  </div>
+
+
+  <!-- payment section start-->
+  <section class="payment_form">
+    <div class="payment-container">
+      <div class="payment-tabs">
+        <button class="tab active_tab">Card</button>
+        <button class="tab">BankAccount</button>
+        <button class="tab">Paypal</button>
+        <button class="tab">...</button>
+      </div>
+
+      <form id="payment-form">
+        <label>Card number</label>
+<div class="input-row">
+  <input type="text" placeholder="1234 1234 1234 1234" required maxlength="19">
+  <img class="card-icons" src="pics/visa.png" alt="Visa">
+</div>
+<span class="error" id="card-error"></span>
+
+<div class="input_group">
+  <div>
+    <label>Expiry</label>
+    <input type="text" placeholder="MM / YY" required maxlength="7">
+    <span class="error" id="expiry-error"></span>
+  </div>
+  <div>
+    <label>CVC</label>
+    <input type="text" placeholder="CVC" required maxlength="4">
+    <span class="error" id="cvc-error"></span>
+  </div>
+</div>
+
+<div class="input_group">
+  <div>
+    <label>Country</label>
+    <select required>
+      <option>Sri Lanka</option>
+      <option>India</option>
+      <option>China</option>
+    </select>
+  </div>
+  <div>
+    <label>ZIP</label>
+    <input type="text" placeholder="90210" required>
+    <span class="error" id="zip-error"></span>
+  </div>
+</div>
+
+        <p class="terms">By providing your card information, you allow Techtolia to charge your card for future payments
+          in accordance with their terms.</p>
+
+        <button type="submit" class="pay-button">Pay Now Rs.9300.00</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- payment section ends-->
+
+</body>
+<script src="script.js"></script>
+<script src="products.js"></script>
+
+</html>

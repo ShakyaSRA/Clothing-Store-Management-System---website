@@ -1,0 +1,40 @@
+[
+  {
+    "id": "dashboard",
+    "icon": "fa-solid fa-sliders",
+    "label": "Dashboard",
+    "content": "<h3 class='tab_header'>Hello Aelin!</h3><div class='tab_body'><p class='tab_desccription'>Here you can easily manage your orders, track shipments, update your personal details, and view your wishlist. Stay updated with the latest arrivals, exclusive offers, and order history—all in one place. We're here to make your shopping experience seamless and stylish.</p></div>"
+  },
+  {
+    "id": "orders",
+    "icon": "fa-solid fa-shopping-cart",
+    "label": "Orders",
+    "content": "<h3 class='tab_header'>Your Orders</h3><div class='tab_body'><table class='placed_order_table'><tr><th>Orders</th><th>Date</th><th>Status</th><th>Total</th><th>Action</th></tr><tr><td>#2345</td><td>July 24, 2025</td><td>Processing</td><td>Rs.3700.00</td><td><a href='#' class='view_order'>View</a></td></tr><tr><td>#9765</td><td>June 19, 2025</td><td>Completed</td><td>Rs.6000.00</td><td><a href='#' class='view_order'>View</a></td></tr><tr><td>#8764</td><td>March 24, 2025</td><td>Completed</td><td>Rs.5800.00</td><td><a href='#' class='view_order'>View</a></td></tr></table></div>"
+  },
+  {
+    "id": "update-profile",
+    "icon": "fa-solid fa-user",
+    "label": "Update Profile",
+    "content": "<h3 class='tab_header'>Update Profile</h3><div class='tab_body'><form class='form-grid'><input type='text' placeholder='Email' class='form_input'><input type='text' placeholder='Username' class='form_input'><div class='form_btn'><button class='btn'>Save</button></div></form></div>"
+  },
+  {
+    "id": "address",
+    "icon": "fa-solid fa-location-dot",
+    "label": "My Address",
+    "content": "<h3 class='tab_header'>Shipping Address</h3><div class='tab_body'><address class='address'>No 39,<br> Nagahamulla Road,<br> Uduwawala,<br> Katugastota,<br> Kandy,<br> Sri Lanka</address><a href='' class='edit'>Edit</a></div>"
+  },
+  {
+    "id": "change_password",
+    "icon": "fa-solid fa-user",
+    "label": "Change Password",
+    "content": "<h3 class='tab_header'>Change Password</h3><div class='tab_body'><form class='form-grid'><input type='password' placeholder='Current Password' class='form-input'><input type='password' placeholder='New Password' class='form-input'><input type='password' placeholder='Confirm Password' class='form-input'><div class='form_btn'><button class='btn'>Save</button></div></form></div>"
+  },
+  {
+    "id": "logout",
+    "icon": "fas fa-portal-exit",
+    "label": "Logout",
+    "content": "<h3 class='tab_header'>You have been logged out.</h3>"
+  }
+]
+
+

@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="Viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+
+</head>
+
+<body>
+
+    <div class="header">
+        <div class="branding">
+            <a href="#" class="logo"><img src="pics/logo.png"></a>
+            <h3 class="name">La Belle Fille</h3>
+
+
+        </div>
+
+        <div class="navbar">
+            <a href="index.html">Home</a>
+            <a href="newArivals.html">New Arivals</a>
+            <a href="collections.html">Collections</a>
+            <a href="sale.html">Flash Sale</a>
+            <a href="about.html">About</a>
+            <a href="contactUs.html">Contact Us</a>
+
+        </div>
+
+        <div class="icons">
+            <div class="icon login" id="login">
+                <a href="login_register.html">Login</a>
+            </div>
+
+            <div class="filter-toggle">
+                <i class="fas fa-filter" id="filterIcon" title="Filter Products"></i>
+                <select id="typeFilter" class="hidden">
+                    <option value="all">Filter Products</option>
+                    <option value="dress">Dress</option>
+                    <option value="blouse">Blouses</option>
+                    <option value="activeWear">Active Wear</option>
+                </select>
+            </div>
+
+            <!-- <div class="icon" id="search-btn">
+                <i class="fas fa-search"></i>
+            </div> -->
+
+            <div class="icon" id="cart-btn">
+                <a href="cart.html">
+                    <i class="fas fa-shopping-cart"></i>
+                </a>
+                <span class="item-count">5</span>
+            </div>
+
+            <div class="icon user">
+                <a href="account.html">
+                    <i class="fa-solid fa-user"></i>
+                </a>
+            </div>
+
+            <div class="icon" id="menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+
+        </div>
+        
+
+    </div>
+
+    <input type="checkbox" id="menu-btn" hidden />
+    <label for="menu-btn" class="fas fa-bars"></label>
+    </div>
+
+    <input type="checkbox" id="menu-btn" hidden />
+    <label for="menu-btn" class="fas fa-bars"></label>
+
+    <div class="search-form">
+        <input type="search" id="search-box" placeholder="Search here...">
+        <label for="search-box" class="fs fa-search"></label>
+    </div>
+
+
+    <section class="home" id="home">
+
+        <div class="content">
+            <h3> La Belle Fille</h3>
+            <p>Whether you're looking for everyday essentials or standout statement pieces, we’ve got something for
+                everyone. Explore our latest collections and express your
+                unique style with confidence.</p>
+
+            <a href="#" class="btn"> Shop Now</a>
+
+            </p>
+        </div>
+    </section>
+
+    <!-- about section start-->
+    <section class="about" id="about">
+        <h1 class="heading"><span> about</span> us </h1>
+        <div class="row">
+            <div class="image">
+                <img src="pics/bg.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3>Why shop with us?</h3>
+                <p>At La Belle Fille, we believe fashion should be fun, affordable, and accessible to everyone. We
+                    handpick high-quality, on-trend pieces
+                    to keep you looking your best without breaking the bank. With fast shipping, easy returns, and a
+                    customer-first mindset, we’re here
+                    to make your shopping experience smooth, stylish, and satisfying.</p>
+
+                <a href="about.html" class="btn">Learn More</a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- about section ends-->
+    <!-- products section starts-->
+    <section class="products" id="products">
+        <h1 class="heading">Latest <span> products</span> </h1>
+        <div class="box-container" id="productContainer">
+
+
+        </div>
+    </section>
+    <!-- products section ends-->
+
+    <!--review section starts-->
+    <section class="review" id="review">
+        <h1 class="heading">Customer's <span>review</span></h1>
+        <div class="box-container">
+            <div class="box">
+                <div class="stars">
+                    <i class="fas-fa-stars"></i>
+                    <i class="fas-fa-stars"></i>
+                    <i class="fas-fa-stars"></i>
+                    <i class="fas-fa-stars"></i>
+                    <i class="fas-fa-stars"></i>
+                </div>
+
+                <p>Great quality and stylish designs!
+                    I love shopping here! The clothes are always trendy and fit perfectly. The material feels
+                    durable.</p>
+                <div class="user">
+                    <img src="pics/ava.jpeg" alt="">
+                    <div class="user-info">
+                        <h3>Ava Chen</h3>
+                        <span>happy cutomer</span>
+                    </div>
+                </div>
+                <span class="fas fa-quote-right"></span>
+            </div>
+
+            <div class="box">
+                <div class="stars">
+                    <i class="fas-fa-stars"></i>
+                    <i class="fas-fa-stars"></i>
+                    <i class="fas-fa-stars"></i>
+                    <i class="fas-fa-stars"></i>
+                    <i class="fas-fa-stars"></i>
+                </div>
+
+                <p>Affordable and fashionable.
+                    Great place to shop if you're on a budget but still want to look good.
+                    I found some amazing deals during their clearance sale.</p>
+                <div class="user">
+                    <img src="pics/clary.jpeg" alt="">
+                    <div class="user-info">
+                        <h3>Clary Fairchild</h3>
+                        <span>happy cutomer</span>
+                    </div>
+                </div>
+                <span class="fas fa-quote-right"></span>
+            </div>
+
+            <div class="box">
+                <div class="stars">
+                    <i class="fas-fa-stars"></i>
+                    <i class="fas-fa-stars"></i>
+                    <i class="fas-fa-stars"></i>
+                    <i class="fas-fa-stars"></i>
+                    <i class="fas-fa-stars"></i>
+                </div>
+
+                <p>Fast delivery and perfect fit!
+                    I ordered online and got my package within two days. The sizing guide was accurate,
+                    and the clothes fit perfectly.</p>
+                <div class="user">
+                    <img src="pics/izzy.jpeg" alt="">
+                    <div class="user-info">
+                        <h3>Isabel Lightwood</h3>
+                        <span>happy cutomer</span>
+                    </div>
+                </div>
+                <span class="fas fa-quote-right"></span>
+            </div>
+
+            <div class="box">
+                <div class="stars">
+                    <i class="fas-fa-stars"></i>
+                    <i class="fas-fa-stars"></i>
+                    <i class="fas-fa-stars"></i>
+                    <i class="fas-fa-stars"></i>
+                    <i class="fas-fa-stars"></i>
+                </div>
+
+                <p>Trendy styles and great value!
+                    I’m always impressed by how fashionable and up-to-date their collections
+                    are. The prices are reasonable, and the clothes last longer than I expected. Highly recommend for
+                    anyone who
+                    loves staying in style without overspending!
+
+                </p>
+                <div class="user">
+                    <img src="pics/elide.jpeg" alt="">
+                    <div class="user-info">
+                        <h3>Elide Lochan</h3>
+                        <span>happy cutomer</span>
+                    </div>
+                </div>
+                <span class="fas fa-quote-right"></span>
+            </div>
+
+        </div>
+    </section>
+    <!--review section ends-->
+
+    
+    <!-- Newsletter section starts-->
+
+<div class="newsletter">
+  <div class="news-text">
+    <h4>Sign Up for Newsletters</h4>
+    <p>Get Email updates about our latest shop and <span>special offers</span>.</p>
+  </div>
+  <div class="form">
+    <input type="text" id="newsletter-email" placeholder="Your email address">
+    <button id="newsletter-submit" type="button">Sign Up</button>
+    <span id="error"></span>
+  </div>
+</div>
+
+    <!-- Newsletter section ends-->
+
+    <!-- footer section start-->
+    <footer class="footer-container">
+        <div class="footer-links">
+            <div class="footer-link-wrapper">
+                <div class="footer-link-items">
+                    <h3>Contact Us</h3>
+                    <a href="/">Contact</a>
+                    <a href="/">Support</a>
+                    <a href="/">Sponsorship</a>
+                    <a href="/">Terms of Service</a>
+                </div>
+
+                <div class="footer-link-items">
+                    <h3>About</h3>
+                    <a href="/">How It Works</a>
+                    <a href="/">Careers</a>
+                    <a href="/">Investors</a>
+                    <a href="/">Privacy Policy</a>
+                </div>
+
+                <div class="footer-link-items">
+                    <h3>Social Media</h3>
+                    <a href="/">Instagram</a>
+                    <a href="/">Facebook</a>
+                    <a href="/">YouTube</a>
+                    <a href="/">Twitter</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="social-media">
+            <div class="social-media-wrap">
+                <div class="footer-branding">
+                    <img src="pics/logo.png" alt="Logo" />
+                    <h3 class="brand-name">La Belle Fille</h3>
+                </div>
+                <p class="website-rights">La Belle Fille © 2025. All rights reserved.</p>
+                <div class="social-icons">
+                    <a href="/" class="social-icon-link"><i class="fab fa-facebook"></i></a>
+                    <a href="/" class="social-icon-link"><i class="fab fa-instagram"></i></a>
+                    <a href="/" class="social-icon-link"><i class="fab fa-twitter"></i></a>
+                    <a href="/" class="social-icon-link"><i class="fab fa-linkedin"></i></a>
+                    <a href="/" class="social-icon-link"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+<script src="script.js"></script>
+<script src="products.js"></script>
+
+</html>

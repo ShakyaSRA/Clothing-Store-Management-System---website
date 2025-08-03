@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="Viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+
+</head>
+
+<body>
+
+    <div class="header">
+        <div class="branding">
+            <a href="#" class="logo"><img src="pics/logo.png"></a>
+            <h3 class="name">La Belle Fille</h3>
+
+
+        </div>
+
+        <div class="navbar">
+            <a href="index.html">Home</a>
+            <a href="newArivals.html">New Arivals</a>
+            <a href="collections.html">Collections</a>
+            <a href="sale.html">Flash Sale</a>
+            <a href="about.html">About</a>
+            <a href="contactUs.html">Contact Us</a>
+
+        </div>
+
+        <div class="icons">
+            <div class="icon login" id="login">
+                <a href="login_register.html">Login</a>
+            </div>
+
+            <div class="filter-toggle">
+                <i class="fas fa-filter" id="filterIcon" title="Filter Products"></i>
+                <select id="typeFilter" class="hidden">
+                    <option value="all">Filter Products</option>
+                    <option value="dress">Dress</option>
+                    <option value="blouse">Blouses</option>
+                    <option value="activeWear">Active Wear</option>
+                </select>
+            </div>
+
+            <div class="icon" id="cart-btn">
+                <a href="cart.html">
+                    <i class="fas fa-shopping-cart"></i>
+                </a>
+                <span class="item-count">5</span>
+            </div>
+
+            <div class="icon user">
+                <a href="account.html">
+                    <i class="fa-solid fa-user"></i>
+                </a>
+            </div>
+
+            <div class="icon" id="menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+
+            
+        </div>
+
+    </div>
+    <section class="cart_section">
+        <div class="table_container">
+            <table class="table">
+                <tr>
+                    <th>Image</th>
+                    <th>Name</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                    <th>Subtotal</th>
+                    <th>Remove</th>
+                </tr>
+                <tr>
+                    <td><img src="pics/pic4.jpg" alt="" class="table_img"></td>
+                    <td>
+                        <h3 class="table_title">Flowy Gown</h3>
+                        <p class="table_description">Bask in timeless sophistication with this cream-white midi dress,
+                            featuring flowy kimono sleeves and
+                            a cinched waist that flatters every silhouette.</p>
+                    </td>
+                    <td><span class="table_price">Rs.7000.00</span></td>
+                    <td><input type="number" value="2" class="quantity"></td>
+                    <td><span class="table_subtotal">Rs.14000.00</span></td>
+                    <td><i class="fas fa-trash-alt"></i></td>
+                </tr>
+                <tr>
+                    <td><img src="pics/pic6.jpg" alt="" class="table_img"></td>
+                    <td>
+                        <h3 class="table_title">Flowy Gown</h3>
+                        <p class="table_description">Bask in timeless sophistication with this cream-white midi dress,
+                            featuring flowy kimono sleeves and
+                            a cinched waist that flatters every silhouette.</p>
+                    </td>
+                    <td><span class="table_price">Rs.7000.00</span></td>
+                    <td><input type="number" value="2" class="quantity"></td>
+                    <td><span class="table_subtotal">Rs.14000.00</span></td>
+                    <td><i class="fas fa-trash-alt"></i></td>
+                </tr>
+                <tr>
+                    <td><img src="pics/pic7.jpg" alt="" class="table_img"></td>
+                    <td>
+                        <h3 class="table_title">Flowy Gown</h3>
+                        <p class="table_description">Bask in timeless sophistication with this cream-white midi dress,
+                            featuring flowy kimono sleeves and
+                            a cinched waist that flatters every silhouette.</p>
+                    </td>
+                    <td><span class="table_price">Rs.7000.00</span></td>
+                    <td><input type="number" value="2" class="quantity"></td>
+                    <td><span class="table_subtotal">Rs.14000.00</span></td>
+                    <td><i class="fas fa-trash-alt"></i></td>
+                </tr>
+                <tr>
+                    <td><img src="pics/pic10.jpg" alt="" class="table_img"></td>
+                    <td>
+                        <h3 class="table_title">Flowy Gown</h3>
+                        <p class="table_description">Bask in timeless sophistication with this cream-white midi dress,
+                            featuring flowy kimono sleeves and
+                            a cinched waist that flatters every silhouette.</p>
+                    </td>
+                    <td><span class="table_price">Rs.7000.00</span></td>
+                    <td><input type="number" value="2" class="quantity"></td>
+                    <td><span class="table_subtotal">Rs.14000.00</span></td>
+                    <td><i class="fas fa-trash-alt"></i></td>
+                </tr>
+            </table>
+
+        </div>
+        <div class="cart_action">
+            <a href="" class="btn">Update Cart</a>
+            <a href="" class="btn">Continue Shopping</a>
+        </div>
+
+
+        <div class="divider">
+            <i class="fa-solid fa-fingerprint"></i>
+        </div>
+
+        <div class="cart_grp">
+            <div class="cart_inputs">
+                <div class="cart_shipping">
+                    <h3 class="section_title">Shipping</h3>
+                    <form action="" class="form_grp">
+                        <input type="text" placeholder="State/Country" class="form_input">
+                        <div class="form_row">
+                            <input type="text" placeholder="City" class="form_input">
+                            <input type="text" placeholder="PostCode / ZIP" class="form_input">
+                        </div>
+                        <div class="form_btn">
+                            <button class="btn">
+                                <i class="fa-solid fa-shuffle"></i>Update
+                            </button>
+                        </div>
+                    </form>
+
+                </div>
+
+                <div class="cart_coupon">
+                    <h3 class="section_title">Apply Coupon</h3>
+                    <form action="" class="coupon_form">
+                        <div class="form_grp">
+                            <input type="text" class="form_input" placeholder="Enter Your Coupon">
+                            <div class="form_btn">
+                                <button class="btn">
+                                    <i class="fa-solid fa-tag"></i>Apply
+                                </button>
+                            </div>
+                        </div>
+
+                    </form>
+                </div>
+
+            </div>
+            <div class="cart_total">
+                <h3 class="section_title">Cart Total</h3>
+                <table class="cart_total_table">
+                    <tr>
+                        <td><span class="cart_total_title">Cart Subtotal</span></td>
+                        <td><span class="cart_total_price">Rs.7000.00</span></td>
+                    </tr>
+
+                    <tr>
+                        <td><span class="cart_total_title">Shipping</span></td>
+                        <td><span class="cart_total_price">Rs.200.00</span></td>
+                    </tr>
+
+                    <tr>
+                        <td><span class="cart_total_title">Total</span></td>
+                        <td><span class="cart_total_price">Rs.7200.00</span></td>
+                    </tr>
+                </table>
+                <a href="checkout.html" class="btn">
+                    Proceed To Checkout
+                </a>
+            </div>
+        </div>
+
+
+    </section>
+
+
+    <!-- Newsletter section starts-->
+
+    <div class="newsletter">
+  <div class="news-text">
+    <h4>Sign Up for Newsletters</h4>
+    <p>Get Email updates about our latest shop and <span>special offers</span>.</p>
+  </div>
+  <div class="form">
+    <input type="text" id="newsletter-email" placeholder="Your email address">
+    <button id="newsletter-submit" type="button">Sign Up</button>
+    <span id="error"></span>
+  </div>
+</div>
+
+
+
+    <!-- Newsletter section ends-->
+
+
+    <!-- footer section start-->
+    <footer class="footer-container">
+        <div class="footer-links">
+            <div class="footer-link-wrapper">
+                <div class="footer-link-items">
+                    <h3>Contact Us</h3>
+                    <a href="/">Contact</a>
+                    <a href="/">Support</a>
+                    <a href="/">Sponsorship</a>
+                    <a href="/">Terms of Service</a>
+                </div>
+
+                <div class="footer-link-items">
+                    <h3>About</h3>
+                    <a href="/">How It Works</a>
+                    <a href="/">Careers</a>
+                    <a href="/">Investors</a>
+                    <a href="/">Privacy Policy</a>
+                </div>
+
+                <div class="footer-link-items">
+                    <h3>Social Media</h3>
+                    <a href="/">Instagram</a>
+                    <a href="/">Facebook</a>
+                    <a href="/">YouTube</a>
+                    <a href="/">Twitter</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="social-media">
+            <div class="social-media-wrap">
+                <div class="footer-branding">
+                    <img src="pics/logo.png" alt="Logo" />
+                    <h3 class="brand-name">La Belle Fille</h3>
+                </div>
+                <p class="website-rights">La Belle Fille © 2025. All rights reserved.</p>
+                <div class="social-icons">
+                    <a href="/" class="social-icon-link"><i class="fab fa-facebook"></i></a>
+                    <a href="/" class="social-icon-link"><i class="fab fa-instagram"></i></a>
+                    <a href="/" class="social-icon-link"><i class="fab fa-twitter"></i></a>
+                    <a href="/" class="social-icon-link"><i class="fab fa-linkedin"></i></a>
+                    <a href="/" class="social-icon-link"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+<script src="script.js"></script>
+<script src="products.js"></script>
+
+</html>

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="Viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+
+</head>
+
+<body>
+
+    <div class="header">
+        <div class="branding">
+            <a href="#" class="logo"><img src="pics/logo.png"></a>
+            <h3 class="name">La Belle Fille</h3>
+
+
+        </div>
+
+        <div class="navbar">
+            <a href="index.html">Home</a>
+            <a href="newArivals.html">New Arivals</a>
+            <a href="collections.html">Collections</a>
+            <a href="sale.html">Flash Sale</a>
+            <a href="about.html">About</a>
+            <a href="contactUs.html">Contact Us</a>
+
+        </div>
+
+
+        <div class="icons">
+            <div class="icon login" id="login">
+                <a href="login_register.html">Login</a>
+            </div>
+
+            <div class="filter-toggle">
+                <i class="fas fa-filter" id="filterIcon" title="Filter Products"></i>
+                <select id="typeFilter" class="hidden">
+                    <option value="all">Filter Products</option>
+                    <option value="dress">Dress</option>
+                    <option value="blouse">Blouses</option>
+                    <option value="activeWear">Active Wear</option>
+                </select>
+            </div>
+
+            <div class="icon" id="cart-btn">
+                <a href="cart.html">
+                    <i class="fas fa-shopping-cart"></i>
+                </a>
+                <span class="item-count">5</span>
+            </div>
+
+            <div class="icon user">
+                <a href="account.html">
+                    <i class="fa-solid fa-user"></i>
+                </a>
+            </div>
+
+            <div class="icon" id="menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+
+            
+        </div>
+
+    </div>
+
+
+    <!-- about section start-->
+    <section class="login_form">
+        <div class="wrapper">
+
+
+            <div class="form_box login">
+                <h2>Login</h2>
+                <form action="#">
+                    <div class="input_box">
+                        <span class="login_icon"><i class="fa fa-envelope" aria-hidden="true"></i></span>
+                        <input type="email" required>
+                        <label>Email</label>
+
+                    </div>
+                    <div class="input_box">
+                        <span class="login_icon"><i class="fa-solid fa-lock"></i></span>
+                        <input type="password" required>
+                        <label>Password</label>
+                    </div>
+                    <div class="remember_forgot">
+                        <label> <input type="checkbox">Remember me</label>
+                        <a href="#">Forgot Password?</a>
+                    </div>
+
+                    <button type="submit" class="btn">Login</button>
+                    <div class="login_reg_link">
+                        <p>Don't have an account? <a href="#" class="register_link">Sign Up</a></p>
+                    </div>
+                </form>
+
+            </div>
+
+            <div class="form_box register">
+                <h2>Registration</h2>
+                <form action="#">
+                    <div class="input_box">
+                        <span class="login_icon"><i class="fa-solid fa-user"></i></span>
+                        <input type="text" required>
+                        <label>Username</label>
+
+                    </div>
+                    <div class="input_box">
+                        <span class="login_icon"><i class="fa fa-envelope" aria-hidden="true"></i></span>
+                        <input type="email" required>
+                        <label>Email</label>
+
+                    </div>
+                    <div class="input_box">
+                        <span class="login_icon"><i class="fa-solid fa-lock"></i></span>
+                        <input type="password" required>
+                        <label>Password</label>
+                    </div>
+                    <div class="remember_forgot">
+                        <label> <input type="checkbox">I agree to the terms & conditions </label>
+                    </div>
+
+                    <button type="submit" class="btn">Register</button>
+                    <div class="login_reg_link">
+                        <p>Already have an account? <a href="#" class="login_link">Login</a></p>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- about section ends-->
+
+</body>
+<script src="script.js"></script>
+<script src="products.js"></script>
+
+</html>

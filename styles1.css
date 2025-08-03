@@ -1,0 +1,610 @@
+
+/******ABOUT US********/
+
+@media screen and (max-width: 768px) {
+    .timeline::after {
+        left: 31px;
+    }
+
+    .timeline-item {
+        width: 100%;
+        padding-left: 70px;
+        padding-right: 25px;
+    }
+
+    .timeline-item.right {
+        left: 0%;
+    }
+
+    .timeline-item::after {
+        left: 15px;
+    }
+
+    .about .row {
+        flex-direction: column;
+    }
+}
+
+/******CONTACT US********/
+
+/* ---------- TABLETS ---------- */
+@media (max-width: 991px) {
+  .contact-text h1 {
+    font-size: 6rem;
+  }
+
+  .contact-section {
+    margin: auto 4rem;
+    flex-direction: column;
+    padding: 30px 20px;
+    align-items: center;
+    gap: 3rem;
+  }
+
+  .contact-left,
+  .contact-right {
+    width: 100%;
+    margin: 0;
+  }
+
+  .contact-left h2,
+  .contact-right h2 {
+    font-size: 2.5rem;
+  }
+
+  .social-icons {
+    text-align: center;
+  }
+}
+
+/* ---------- PHONES ---------- */
+@media (max-width: 600px) {
+  .contact {
+    margin-top: 5rem;
+    height: auto;
+    padding: 4rem 1rem;
+    text-align: center;
+  }
+
+  .contact-text h1 {
+    font-size: 3.5rem;
+  }
+
+  .contact-section {
+    margin: auto 1rem;
+    padding: 20px 10px;
+    gap: 2rem;
+  }
+
+  .contact-left p,
+  .contact-right p {
+    font-size: 1.1rem;
+    text-align: center;
+  }
+
+  .contact-info p {
+    font-size: 1rem;
+  }
+
+  .contact-right .row {
+    flex-direction: column;
+  }
+
+  .social-icons a {
+    font-size: 2rem;
+    margin: 1.5rem 6px;
+  }
+
+  .contact-right input,
+  .contact-right textarea {
+    font-size: 1.1rem;
+    padding: 8px;
+  }
+
+  .contact-right button {
+    font-size: 1.1rem;
+  }
+}
+
+/**************HEADER SECTION*******************/
+
+/* ========== TABLETS (max-width: 991px) ========== */
+@media (max-width: 991px) {
+  .heading {
+    font-size: 4rem;
+    padding-bottom: 2.5rem;
+  }
+
+  .btn {
+    font-size: 1.5rem;
+    padding: 0.6rem 2.5rem;
+  }
+
+  .header {
+    flex-wrap: wrap;
+    height: auto;
+    padding: 1rem 2rem;
+  }
+
+  .branding {
+    margin-left: 2rem;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+
+  .header .logo img {
+    height: 5.5rem;
+  }
+
+  .header .name {
+    font-size: 2rem;
+  }
+
+  .header .navbar a {
+    padding: 1rem;
+    font-size: 1.6rem;
+  }
+
+  .header .icons {
+    gap: 1rem;
+  }
+
+  .header .icons .icon {
+    font-size: 1.7rem;
+  }
+
+  .header .search-form {
+    width: 90%;
+    right: 5%;
+  }
+}
+
+
+/* ========== PHONES (max-width: 600px) ========== */
+@media (max-width: 600px) {
+  .heading {
+    font-size: 2.5rem;
+    padding-bottom: 2rem;
+  }
+
+  .btn {
+    font-size: 1.3rem;
+    padding: 0.5rem 2rem;
+  }
+
+  .header {
+    flex-direction: column;
+    height: auto;
+    align-items: flex-start;
+    padding: 1rem;
+  }
+
+  .branding {
+    margin-left: 0;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .header .name {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+
+  .header .logo img {
+    height: 5rem;
+  }
+
+  .header .navbar {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header .navbar a {
+    padding: 0.5rem 0;
+    font-size: 1.4rem;
+  }
+
+  .header .icons {
+    justify-content: center;
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  .header .fa-bars {
+    display: block;
+  }
+
+  .header .search-form {
+    width: 95%;
+    right: 2.5%;
+    top: 110%;
+  }
+
+  .header .search-form input {
+    font-size: 1.4rem;
+  }
+
+  .header .search-form label {
+    font-size: 2rem;
+  }
+}
+
+
+/**************CHECKOUT AND ACCOUNTS*******************/
+/* ========== TABLETS (max-width: 991px) ========== */
+@media (max-width: 991px) {
+  .checkout {
+    margin: 8rem 4rem;
+  }
+
+  .checkout_container {
+    flex-direction: column;
+  }
+
+  .checkout_grp {
+    width: 100%;
+  }
+
+  .checkout_grp .form input,
+  .checkout_grp .form textarea {
+    width: 100%;
+  }
+
+  .accounts_container {
+    flex-direction: column;
+    margin: 12rem 4rem;
+  }
+
+  .account_tab {
+    width: 100%;
+    font-size: 1.4rem;
+  }
+
+  .placed_order_table,
+  .address,
+  .form-grid {
+    width: 100%;
+    overflow-x: auto;
+  }
+
+  .form-grid input {
+    width: 100%;
+  }
+}
+
+
+/* ========== PHONES (max-width: 600px) ========== */
+@media (max-width: 600px) {
+  .checkout {
+    margin: 5rem 1rem;
+  }
+
+  .checkout_grp .section_title,
+  .checkout_title {
+    font-size: 1.5rem;
+  }
+
+  .checkout_grp .form input,
+  .checkout_grp .form textarea {
+    font-size: 1.2rem;
+    padding: 0.8rem;
+  }
+
+  .order_table,
+  .placed_order_table {
+    font-size: 1.2rem;
+    overflow-x: auto;
+    display: block;
+  }
+
+  .order_table th,
+  .order_table td,
+  .placed_order_table th,
+  .placed_order_table td {
+    padding: 0.3rem 0.6rem;
+  }
+
+  .accounts_container {
+    margin: 10rem 1rem;
+  }
+
+  .account_tab {
+    font-size: 1.2rem;
+    padding: 1rem;
+  }
+
+  .tab_header {
+    font-size: 1.5rem;
+  }
+
+  .tab_desccription {
+    font-size: 1.3rem;
+  }
+
+  .form-grid input {
+    font-size: 1.2rem;
+    padding: 0.6rem;
+  }
+
+  .view_order,
+  .edit {
+    font-size: 1.2rem;
+    padding: 1rem;
+  }
+}
+/***************CART****************/
+
+/* ========== TABLETS (max-width: 991px) ========== */
+@media (max-width: 991px) {
+  .table_container {
+    margin: 8rem 4rem;
+  }
+
+  .table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  .table_title,
+  .table_description,
+  .table_price,
+  .table_subtotal,
+  .table_trash {
+    font-size: 1.3rem;
+  }
+
+  .cart_grp {
+    flex-direction: column;
+    gap: 4rem;
+    margin-left: 0;
+  }
+
+  .cart_inputs,
+  .cart_total_table {
+    width: 100%;
+  }
+
+  .coupon_form .form_grp {
+    flex-direction: column;
+  }
+
+  .coupon_form .form_grp .btn {
+    width: 100%;
+    height: 4rem;
+  }
+
+  .cart_coupon {
+    margin-right: 0;
+  }
+}
+
+/* ========== MOBILE DEVICES (max-width: 600px) ========== */
+@media (max-width: 600px) {
+  .table_container {
+    margin: 6rem 1rem;
+  }
+
+  .table_title,
+  .table_description,
+  .table_price,
+  .table_subtotal,
+  .table_trash {
+    font-size: 1.1rem;
+  }
+
+  .cart_inputs {
+    width: 100%;
+    gap: 1.5rem;
+  }
+
+  .section_title {
+    font-size: 1.6rem;
+  }
+
+  .cart_total {
+    padding: 1rem;
+  }
+
+  .cart_total_table {
+    font-size: 1.3rem;
+    width: 100%;
+  }
+
+  .cart_total_btn {
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+  }
+
+  .form_row {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .cart_shipping .form_grp input,
+  .coupon_form .form_grp input {
+    font-size: 1.3rem;
+    padding: 0.8rem;
+  }
+
+  .divider i {
+    font-size: 1rem;
+    padding: 0 1rem;
+  }
+}
+
+
+/****************FOOTER**********************/
+@media (max-width: 768px) {
+  .footer-link-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .social-media-wrap {
+    gap: 2rem;
+  }
+
+  .footer-branding {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 768px) {
+
+    .login,
+    .Register {
+        flex: 1 1 100%;
+    }
+}
+
+
+
+/*******************REVIEW SECTION*************************/
+/* Tablets (up to 991px) */
+@media (max-width: 991px) {
+  .review .box-container {
+    gap: 2rem;
+  }
+
+  .newsletter {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 2rem;
+  }
+
+  .newsletter .form {
+    width: 100%;
+    margin-top: 1.5rem;
+  }
+
+  .newsletter .news-text h4 {
+    font-size: 2.5rem;
+  }
+
+  .newsletter .news-text p {
+    font-size: 1.8rem;
+  }
+
+  .newsletter .form input {
+    font-size: 1.8rem;
+  }
+
+  .newsletter button {
+    font-size: 1.6rem;
+  }
+}
+
+/* Phones (up to 600px) */
+@media (max-width: 600px) {
+  .review .box-container .box {
+    padding: 2rem;
+  }
+
+  .review .box-container .box p {
+    font-size: 1.6rem;
+  }
+
+  .review .box-container .box .fa-quote-right {
+    font-size: 4rem;
+    bottom: 2rem;
+    right: 2rem;
+  }
+
+  .review .box-container .box .stars i {
+    font-size: 1.6rem;
+  }
+
+  .review .box-container .box .user h3,
+  .review .box-container .box .user span {
+    font-size: 1.6rem;
+  }
+
+  .newsletter .news-text h4 {
+    font-size: 2.2rem;
+  }
+
+  .newsletter .news-text p {
+    font-size: 1.6rem;
+  }
+
+  .newsletter .form input {
+    height: 3.5rem;
+    font-size: 1.6rem;
+  }
+
+  .newsletter button {
+    height: 3.5rem;
+    font-size: 1.5rem;
+  }
+}
+
+
+/******************ABOUT SECTIONS********************/
+/* Tablets (up to 991px) */
+@media (max-width: 991px) {
+  .about .row,
+  .about_other .row {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .about .row .content,
+  .about_other .row .content {
+    padding: 2rem 1rem;
+    text-align: center;
+  }
+
+  .about .row .content h3,
+  .about_other .row .content h3 {
+    font-size: 2.5rem;
+  }
+
+  .about .row .content p,
+  .about_other .row .content p {
+    font-size: 1.5rem;
+    padding: 1rem 0;
+  }
+
+  .about_other .row .image img {
+    height: auto;
+  }
+}
+
+/* Phones (up to 600px) */
+@media (max-width: 600px) {
+  .about .row .content h3,
+  .about_other .row .content h3 {
+    font-size: 2.2rem;
+  }
+
+  .about .row .content p,
+  .about_other .row .content p {
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+  }
+
+  .about .row .image,
+  .about_other .row .image {
+    flex: 1 1 100%;
+  }
+
+  .about_other{
+    margin-top: 20rem;
+  }
+
+  .about_other .row .image img {
+    width: 100%;
+    height: auto;
+  }
+
+  #about_page {
+    margin-top: 6rem;
+  }
+}
+
